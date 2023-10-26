@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Lending - Car Loans, Bike Loans, Commercial Loans & Personal Loans</title>
+
+    <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	   <link rel="stylesheet" href="../css/custom.css">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+      <script src="../js/custom-fat.js"></script>
+      <style>
+          .appBox {
+              margin-top: -50px;
+          }
+          @media screen and (max-width: 600px) {
+            .appBox {
+                margin-top: -15px;
+              }
+          }
+          @media screen and (min-width: 600px) {
+              .heroBox {
+                  padding-top: 30px;
+                  padding-right: 10px;
+              }
+              h1 {
+                  padding-top: 60px !important;
+              }
+          }
+      </style>
+  </head>
+  <body>
+    
+      <div class="container calculator">
+        <div class="row">
+            <div class="col-sm-6" style="border: 1px solid #f0f6fa; padding: 30px">
+                <div>
+                    <h4 style="text-align: center">Loan Repayment Calculator</h4>
+                    <p>Amount to Borrow:</p>
+                    <input type="range" min="5000" max="80000" value="15000" step="500" class="slider" id="assetSlider">
+                    <p style="text-align: center; font-size: 20px">Amount: $<span id="assetFigure"></span></p>
+                </div>
+                <div>
+                    <p>Loan Length:</p>
+                    <input type="range" min="3" max="7" value="5" class="slider" id="yearSlider">
+                    <p style="text-align: center; font-size: 20px"><span id="yearsFigure"></span> Years</p>
+                </div>
+                <br>
+                <p>Credit History:   
+                    <select name="credithistory" id="creditHistory" class="float-right">
+                                <option value="excellent">Excellent</option>
+                                <option value="average">Average</option>
+                                <option value="impaired">Impaired</option>
+                            </select> </p>
+            </div>
+            <div class="col-sm-6" style="background-color: #f0f6fa; border: 1px solid #f0f6fa; padding: 30px;">
+                <div>
+                    <p style="color: #58585a">Loan Repayments:</p>
+                    <br>
+                    <p style="color: #58585a">$<span id="calcRepayments" style="font-size: 80px">80</span>per week*</p>
+                    <hr style="background-color: white">
+                    <p style="color: #afccd9">Interest Rate: <span id="displayRate"></span>% <span style="font-size: 12px">(Comparison Rate:<span id="compRate">9.34</span>%)</span></p>
+                </div>
+                    <br>
+            <div class="col align-self-center text-center"><a href="https://m.me/responsivelending"><img width="100px" src="https://responsivelending.zohosites.com.au/RL%20Logo.png"/><!-- <button type="button" class="btn btn-outline-secondary qteBtn">Apply Now</button></a> --> </div>
+                    <p class="reviewName" style="text-align: center">Apply Online in 5 Minutes</p>
+                           
+            </div>
+        </div>    
+      </div>
+      <div class="container">
+         <p style="font-size: 12px; color: #afccd9; text-align: center">*Repayment calculator is provided as a guide only. Interest rates, terms and fees can vary dependent on your situation and requirements and objectives. Contact us directly for a more accurate indicative quotation. Total amount payable on the repayment example above: $<span id="displayTotalPayable"></span>. Comparison rate is based on a $30,000 loan over 5 years. Different amounts and different loan lengths will mean a different comparison rate.</p>
+      </div>
+      
+      
+  
+    <!-- Footer -->
+
+    <script src="../js/custom-fat.js"></script>
+    
+  </body>
+</html>

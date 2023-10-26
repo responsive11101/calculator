@@ -1,0 +1,345 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo Da 2', cursive;
+}
+
+h1 {
+    padding: 60px 20px 0px 60px;
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.jumbotron {
+    background-color: #58585a;
+    margin-top: 80px;
+    padding: 0;
+}
+
+
+.rightHead{
+    background-image: url("/images/backgroundheader.png");
+    min-height: 290px;
+    background-repeat: no-repeat;
+}
+
+.appBox {
+    background-color: white;
+    margin-top: -90px;
+    border: 1px solid #58585a;
+    height: 280px;
+    width: 350px;
+    margin-left: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.bottomHead {
+    background-color: white;
+}
+
+.applyBtn {
+    width: 270px;
+    height: 60px;
+    border-radius: 30px;
+    outline: none;
+    color: #58585a;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: 'Baloo Da 2', cursive;
+    
+}
+
+
+.applyBtn:before {
+    content: '';
+    background: linear-gradient(45deg, #ffcb08, white);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(3px);
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in;
+    border-radius: 30px;
+}
+
+.applyBtn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    border: 1px solid #ffcb08;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #d7eff7 0%, #fffcf2 10%, white 50%, #fffcf2
+        90%, #d7eff7 100%);
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    100% { background-position: 400% 0; }
+}
+
+.applyBtn:after:hover {
+    background-color: blue;
+}
+
+.learnBtn {
+    width: 100%;
+    height: 40px;
+    border-color: #58585a;
+    color: #58585a;
+}
+
+.qteBtn {
+    background-color: #58585a;
+    color: white;
+    width: 100%;
+    border: 1px solid #ffcb08;
+}
+
+.reviewName {
+    color: #58585a;
+    font-size: 12px;
+}
+
+.phone{
+    position: absolute;
+    left: 80px;
+    top: -135px;
+    z-index: 6;
+}
+
+#bike{
+    position: absolute;
+    left: 160px;
+    width: 80px;
+    z-index: 1;
+}
+
+#ute {
+    position: absolute;
+    left: 270px;
+    top: -25px;
+    z-index: 1;
+    width: 120px;
+}
+
+#van {
+    position: absolute;
+    left: 380px;
+    top: 20px;
+    z-index: 2;
+    width: 120px;
+    
+}
+
+#evo {
+    position: absolute;
+    left: 230px;
+    top: 140px;
+    z-index: 3;
+    width: 130px;
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        margin-top: 0px;
+    }
+        
+    .vehicles {
+        width: 120px;
+        left: 230px !important;
+        top: 0px !important;
+        }
+
+    .phone {
+        height: 100px;
+        top: -50px;
+        left: 100px
+    }
+    
+    #van {
+        visibility: hidden;
+    }
+    
+    .appBox{
+        margin-top: -200px;
+
+    }
+    h1 {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hideMeOnMobile {
+        display: none;
+    }
+    
+    .getIt {
+        text-align: center; 
+        flex: auto;
+    }
+    
+
+}
+
+.applyNow {
+    background-color: #ffcb08;
+    color: white !important;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.vehicles {
+    display: none;
+}
+
+#loanPurpose {
+    width: 202px;
+    border-color: #afccd9;
+    color: #58585a;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 22px;
+    color: #58585a;
+}
+
+
+
+#carOptions {
+    background-image: url("/images/phonebg.png");
+    background-repeat: no-repeat;
+}
+
+.carFeatures {
+    padding-top: 40px;
+    font-size: 10px;
+    color: lightgray;
+}
+
+#carSelector {
+    width: 100%;
+    border-color: #afccd9;
+    color: #58585a;
+    font-size: 1.2em;
+}
+
+.paymentBox {
+    border-color: #afccd9;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+
+.boxHeads {
+    background-color: #afccd9;
+    color: white;
+    padding: 5px;
+
+}
+
+.howToBox {
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.howToRow {
+    margin: 15px 10px 15px;
+    max-width: 600px;
+}
+
+.calculator p {
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.calculator select {
+    width: 200px;
+    border-color: #ffcb08;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #58585a;
+    height: 30px;
+}
+
+.calculator {
+    max-width: 1000px;
+}
+
+footer {
+    background-color: #f0f6fa;
+}
+
+.card-header {
+    background-color: #f0f6fa;
+}
+
+.headerList {
+    list-style: none;
+    color: white;
+    padding-left: 60px;
+}
+
+.headerList li:before{
+    content: '✓ ';
+}
+
+
+
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #f0f6fa; /* Grey background */
+  outline: black; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-bottom: 15px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 40px; /* Set a specific slider handle width */
+  border-radius: 45%;
+  height: 35px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: solid 5px #ffcb08;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: red; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
